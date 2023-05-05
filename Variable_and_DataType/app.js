@@ -1,127 +1,178 @@
 /*
-console.log('I'm studying now.')
-console.log('I\'m studying now.')
+num = 20
+console.log(typeof(num)) // number
+
+num = "John"
+console.log(typeof(num)) // string
 */
 
 /*
-let name = "김성진"
-let classRoom=201
-console.log(name+"님, " + classRoom + "호 강의실로 오세요")
-console.log(`${name}님, ${classRoom}호 강의실로 오세요.`) 
+ten = "10" // string
+twenty = 20 // number
 
 
-console.log(name + "님, " + "\n    " + classRoom + "호 강의실로 오세요")
-
-console.log(
-	`${name}님, 
-	${classRoom}호 강의실로 오세요.`)
+console.log(twenty + ten) // 2010 (twenty가 string타입으로 변환됨.)
+console.log(twenty - ten) // 10  (ten이 number타입으로 변환됨.)
+console.log(twenty * ten) // 200 (ten이 number타입으로 변환됨.)
+console.log(twenty / ten) // 2 (ten이 number타입으로 변환됨.)
 */
 
 /*
-const name = prompt("이름을 입력하세요")
-console.log(`${name}님, 
-            반갑습니다.`)
+a = Number(true)
+console.log(a) // 출력: 1
+
+b = Number(false)
+console.log(b) // 출력:0
+
+c = "10"
+console.log(c) // 출력: 10
+console.log(typeof(c)) // 출력: string
+
+c = Number("10")
+console.log(c) // 출력: 10
+console.log(typeof(c)) // 출력: number
+
+d = Number(null)
+console.log(d) // 출력: 0
+console.log(typeof(d))  // 출력: number
+
+e = Number(undefined)
+console.log(e) // 출력: NaN
+console.log(typeof(e)) // 출력: number
+
+f = Number(09)
+console.log(f) // 출력: 9
+console.log(typeof(f))  // 출력: number
+
+g = Number(0.90)
+console.log(g) // 출력:0.9
+console.log(typeof(g))  // 출력: number
+
+i = Number('')
+console.log(i) // 출력: 0
+console.log(typeof(i))  // 출력: number
+
+j = Number('pizza')
+console.log(j) // 출력: NaN
+console.log(typeof(j))  // 출력: number
 */
 
 /*
-let userName
-console.log(userName) 
+let input = prompt("숫자를 입력하세요") // 입력: 20
+console.log(typeof(input))  // 출력: string
+console.log(input+10) // 출력: 2010
+
+let numInput = parseInt(input)
+console.log(typeof(numInput)) // 출력: number
+console.log(numInput+10) // 출력: 30
 */
 
 /*
-let age
-console.log(age)
+let input = prompt("숫자를 입력하세요") // 입력: 36.5
+
+let intInput = parseInt(input)
+console.log(typeof(intInput)) // 출력: number
+console.log(intInput + 10) // 출력: 46
+
+
+let floatInput = parseFloat(input)
+console.log(typeof(floatInput)) // 출력: number
+console.log(floatInput + 10) // 출력: 46.5
 */
 
 /*
-let age = null;
-console.log(age)
+num = 100
+isEmpty = true
+
+a = num.toString() 
+console.log(a) // 100
+console.log(typeof(a)) //string
+
+b = num.toString(2)
+console.log(b) // 1100100
+console.log(typeof(b)) //string
+
+c = num.toString(8)
+console.log(c) // 144
+console.log(typeof(c)) //string
+
+d = num.toString(16)
+console.log(d) // 64
+console.log(typeof(d)) //string
+
+e = isEmpty.toString()
+console.log(e) // true
+console.log(typeof(e)) //string
+
+f = null.toString()
+console.log(f) // 오류 발생
+
+g = undefined.toString()
+console.log(g) // 오류 발생
 */
 
 
 /*
-let notebook = {
-    size: "middle",
-    price: 120,
-    brand: "intel",
-    color: "navy",
-    gameAvailable: false
-}
+num = 100
+isEmpty = true
 
-console.log(notebook)
-console.log(notebook.brand)
-console.log(notebook.color)
+a = String(num) 
+console.log(a) // 100
+console.log(typeof(a)) // string
+
+b = String(isEmpty)
+console.log(b) // true
+console.log(typeof(b)) // string
+
+c = String(null)
+console.log(c) // null
+console.log(typeof(c)) // string
+
+d = String(undefined)
+console.log(d) // undefined
+console.log(typeof(d)) // string
 */
 
 /*
-let doitBook = {
-	title: "모던 자바스크립트 프로그래밍", // string 타입
-	pubDate: "2022-12-06", // string 타입
-	pages: 634, // number 타입
-	finished: true // Boolean 타입
-}
+let input2 = true;
+console.log(typeof(input2)) // boolean
 
-console.log(doitBook) // 출력: {title: '모던 자바스크립트 프로그래밍', pubDate: '2022-12-06', pages: 634, finished: true}
-console.log(doitBook.title) // 출력: 모던 자바스크립트 프로그래밍
+input2 = input2+""
+
+console.log(input2) // true
+console.log(typeof(input2)) // string
 */
 
 /*
-let doitBook = ["모던 자바스크립트 프로그래밍", "2022-12-06", 634, true]
-console.log(doitBook[0]) // 출력: 모던 자바스크립트 프로그래밍
+let input2 = true;
+console.log(typeof(input2)) // boolean
+
+input2 = +input2
+
+console.log(input2) // 1
+console.log(typeof(input2)) // number
 */
 
-/*
-let fruits = ['banana', 'apple', 'orange']
-console.log(fruits)  // 출력: ['banana', 'apple', 'orange']
-*/
+a = Boolean(0)
+console.log(a) // false
 
-/*
-let fruits = ['banana', 'apple', 'orange']
-console.log(fruits.length) // 출력: 3
-console.log(fruits[1])
-*/
+b = Boolean(10)
+console.log(b) // true
 
-/*
-let var1 = Symbol()
-let var2 = Symbol()
-console.log(var1 === var2) // 출력: false
-*/
+h = Boolean(-10)
+console.log(h) // true
 
-/*
-let id = Symbol() // id를 심벌로 지정함.
-const member = {
-    name: "kim",
-    [id]: 12345 // 심벌을 객체의 키로 지정할 때는 대괄호 []안에 표현함.
-}
-console.log(member) // 출력: {name: 'kim', Symbol(): 12345}
-console.log(member[id]) // 심벌 키에 접근할때도 마침표 대신 대괄호 []를 사용함. // 출력: 12345
+c = Boolean('')
+console.log(c) // false
 
-member.id = 6789
-console.log(member) // 출력: {name: 'kim', id: 6789, Symbol(): 12345}
-console.log(member[id])  // 출력: 12345
-*/
+d = Boolean(' ')
+console.log(d) // true
 
-/*
-const member = {
-    name: "kim",
-    id: 12345 
-}
-console.log(member) // 출력: {name: 'kim', id: 12345}
-console.log(member.id) // 출력: 12345
+e = Boolean('hello')
+console.log(e) // true
 
-member.id = 6789
-console.log(member) // 출력: {name: 'kim', id: 6789}
-console.log(member.id) // 출력: 6789
-*/
+f = Boolean(undefined)
+console.log(f) // false
 
-let id = Symbol('아이디') 
-const member = {
-    name: "kim",
-    [id]: 12345 
-}
-console.log(member) //{name: 'kim', Symbol(아이디): 12345}
-console.log(member[id]) // 12345
-
-member.id = 6789
-console.log(member) // {name: 'kim', id: 6789, Symbol(아이디): 12345}
-console.log(member[id]) // 12345
+g = Boolean(null)
+console.log(g) // false
