@@ -107,4 +107,84 @@ let sum = (a, b) => a + b;
 console.log(sum(10, 20)) // 30
 */
 
+/*
+fruits = ['apple', 'grape', 'orange']
+console.log(fruits) // ['apple', 'grape', 'orange']
+*/
+
+/*
+fruits = ['apple', 'grape', 'orange']
+console.log(...fruits) // apple grape orange
+*/
+
+/*
+function addNum(a, b) {
+    return a + b;
+}
+
+console.log(addNum(1, 3)) // 4
+console.log(addNum(1, 3, 5, 7)) // 4 // 앞의 2개의 인수만 매개변수 a, b로 사용함.
+*/
+
+/*
+function addNum(...numbers) { // 나머지 매개변수
+    let sum = 0;
+
+    for (let number of numbers)
+        sum += number;
+
+    return sum;
+}
+
+console.log(addNum(1, 3)) // 4
+console.log(addNum(1, 3, 5, 7)) // 16 // 모든 인수를 매개변수로 사용함.
+*/
+
+/*
+function displayFavorites(first, ...favs) {
+    let str = `가장 좋아하는 과일은 ${first}이군요`
+    return str;
+}
+console.log(displayFavorites('사과','포도','토마토')); // 가장 좋아하는 과일은 사과이군요
+*/
+
+/*
+function displayFavorites(...favs, first) {
+    let str = `가장 좋아하는 과일은 ${first}이군요`
+    return str;
+}
+console.log(displayFavorites('사과','포도','토마토')); // 오류 발생 
+*/
+
+/*
+const bttn = document.querySelector("button");
+
+function display() {
+    alert("클릭했습니다.");
+}
+
+bttn.addEventListener("click", display)
+*/
+
+/*
+const bttn = document.querySelector("button");
+
+bttn.addEventListener("click", () => alert("클릭했습니다.") )
+*/
+
+
+function showData(name, age) {
+    alert(`안녕하세요? ${name}님, 나이가 ${age}살이군요.`);
+}
+
+function getData(callback) {
+    let userName = prompt("이름을 입력하세요"); // 입력: 김성진
+    let userAge = prompt("나이를 입력하세요"); // 입력: 28
+    callback(userName, userAge);
+}
+
+getData(showData) // 출력: 안녕하세요? 김성진님, 나이가 28살이군요.
+
+
+
 
