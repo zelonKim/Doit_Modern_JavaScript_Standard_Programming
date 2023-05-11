@@ -31,4 +31,5 @@ box.addEventListener("click", (e) => {
 } )
 */
 
-
+const body = document.body;
+const result = document.querySelector("#result")
