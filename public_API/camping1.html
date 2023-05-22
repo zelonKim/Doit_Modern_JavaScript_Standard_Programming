@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var url = 'http://api.visitkorea.or.kr/openapi/service/rest/GoCamping/basedList?ServiceKey=sOQHTBnFj3i%2BsmP%2F%2BG7ESr1G%2Bsi3QFX7ToHfk9zI4P07V%2BMK%2BiVbUTTrsB5O%2FCwWmTMt%2FNz8v%2BHlcyMHmeoglA%3D%3D&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=TestApp&_type=json';
+    
+        fetch(url)
+        .then(result => result.json())
+        .then(json => {
+            // console.log(json)
+        const data = json.response.body.items.item;
+        console.log(data);
+        
+        });
+    </script>
+</body>
+</html>
